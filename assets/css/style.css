@@ -99,19 +99,23 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  max-width: 1837px;
+  width: 93.5%;
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+header .wrapper { padding: 40px 0px 25px; }
 
-
-
-
-
+.logo a{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #616DD0;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -119,14 +123,122 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.banner {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.banner .wrapper { 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-content { 
+  width: 66%;
+  padding: 40px 0 38px 3%;
+  box-sizing: border-box;
+}
+
+.banner-content h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #616DD0;
+}
+
+.locate { 
+  display: block;
+  font-size: 26px;
+  font-weight: normal;
+ }
+
+.banner-link { 
+  margin: 21px 0;
+  padding-right: 15%;
+}
+
+.banner-link a {
+  font-size: 30px;
+  color: #616DD0;
+}
+
+.banner-content p {
+  margin-bottom: 30px;
+  padding-right: 18%;
+  font-size: 22px;
+  color: #777777;
+  line-height: 32px;
+} 
+
+.banner-content p a { color: #44C79D;}
+
+.banner-btn a {
+  padding: 15px 5%;
+  border-radius: 4px;
+  margin-right: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #44C79D;
+}
+
+.banner-slider { 
+  padding: 114px 0;
+  width: 32%;
+  text-align: center;
+  color: #fff;
+  background-color: #616DD0;
+}
+
+.slide { display: none; }
+
+.slide:first-child {
+  display: block;
+}
+
+.slide p {
+  padding: 0px 23%;
+  font-size: 22px;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+
+.midspan { 
+  display: block;
+  position: relative;
+  font-size: 22px;
+}
+
+.midspan::after,
+.midspan::before {
+  content: '';
+  width: 20%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.midspan::after { left: 55%; }
+.midspan::before { right: 55%; }
+
+.slide-icon span { position: relative; }
+
+.slide-icon span::after {
+  content: '\f183';
+  font-family: fontAwesome;
+  color: #fff;
+  font-size: 30px;
+  margin: 0px 7px;
+}
+
+.slide-icon { margin: 15px 0; }
 
 
-
-
-
-
-
-
+/* Insiders section start */
+/* Insiders section end */
 /*=================================
   main styling ends here
 =================================*/
