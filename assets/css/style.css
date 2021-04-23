@@ -124,8 +124,8 @@ header .wrapper { padding: 40px 0px 25px; }
   main styling starts here
 =================================*/
 .banner {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1.5px solid #B7B7B7;
+  border-bottom: 1.5px solid #B7B7B7;
 }
 
 .banner .wrapper { 
@@ -228,17 +228,163 @@ header .wrapper { padding: 40px 0px 25px; }
 
 .slide-icon span::after {
   content: '\f183';
+  margin: 0px 7px;
   font-family: fontAwesome;
   color: #fff;
   font-size: 30px;
-  margin: 0px 7px;
 }
 
 .slide-icon { margin: 15px 0; }
 
-
 /* Insiders section start */
+
+h3 {
+  margin: 43px 0;
+  color: #616DD0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.insiders { border-bottom: 1.5px solid #B7B7B7; }
+.insiders .wrapper { padding: 45px 0; }
+
+.insider-card {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.insider-card li { 
+  width: 25%;
+  margin: 15px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.insider-card figure { 
+  width: 65%;
+  margin: 0 auto;
+}
+
+.insider-card h4 {
+  padding: 0 5%;
+  margin: 20px 0 15px;
+  color: #44C79D;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.insider-card p {
+  font-size: 17px;
+  padding: 0 18%;
+  color: #797979;
+}
+
+.title {
+  display: block;
+  font-size: 20px;
+  padding: 0 18%;
+  color: #797979;
+  font-weight: bold;
+}
+
+.rating { margin: 15px 0; }
+.rating span { position: relative; }
+
+.rating span::after {
+  content: '\f005';
+  margin: 0px 5px;
+  font-size: 21px;
+  font-family: fontAwesome;
+  color: #616DD0;
+}
+
 /* Insiders section end */
+
+/* work section start */
+.work { border-bottom: 1.5px solid #B7B7B7; }
+
+.work .wrapper { padding-bottom: 43px; }
+.worklist {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.worklist li { flex-basis: 28%; }
+
+.worklist li div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #616DD0;
+}
+
+.worklist li div::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 45px;
+  font-family: fontAwesome;
+  color: #fff;
+}
+
+.searchicon::after { content: '\f002'; }
+.scheduleicon::after { content: '\f073'; }
+.engageicon::after { content: '\f086'; }
+
+.worklist li div span {
+  text-indent: -99999px;
+  float: left;
+}
+
+.worklist li h5 {
+  margin: 22px 0 15px;
+  font-size: 29px;
+  font-weight: bold;
+  color: #777777;
+}
+
+.worklist li p{ 
+  padding: 0 10px;
+  font-size: 21px;
+  line-height: 28px;
+  color: #797979;
+ }
+/* work section end */
+
+/* Testimonial start */
+
+.testimonial { 
+  color: #fff;
+  background-color: #616DD0;
+ }
+
+.testimonial .wrapper { padding: 20px 0 40px; }
+
+.testimonial h3 { color: #fff; }
+
+.testimonial-slide { 
+  display: none;
+  box-sizing: border-box;
+}
+
+.testimonial-slide:first-child {
+  display: block;
+}
+
+.testimonial-slide p {
+  padding: 0 5%;
+  font-size: 22px;
+  text-align: center;
+}
+/* Testimonial end */
 /*=================================
   main styling ends here
 =================================*/
