@@ -104,6 +104,7 @@ li {
   width: 93.5%;
   margin: 0 auto;
 }
+
 /*=================================
   Header styling starts here
 =================================*/
@@ -138,12 +139,12 @@ header .wrapper { padding: 40px 0px 25px; }
 
 .banner-content { 
   width: 66%;
-  padding: 40px 0 38px 3%;
+  padding: 35px 0px 60px 3%;
   box-sizing: border-box;
 }
 
 .banner-content h2 {
-  font-size: 35px;
+  font-size: 42px;
   font-weight: bold;
   color: #616DD0;
 }
@@ -164,28 +165,40 @@ header .wrapper { padding: 40px 0px 25px; }
   color: #616DD0;
 }
 
+.banner-link a:hover { text-decoration: underline;}
+
 .banner-content p {
   margin-bottom: 30px;
   padding-right: 18%;
-  font-size: 22px;
+  font-size: 24px;
   color: #777777;
   line-height: 32px;
 } 
 
 .banner-content p a { color: #44C79D;}
 
+.banner-btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .banner-btn a {
-  padding: 15px 5%;
+  padding: 15px 4.7%;
+  margin-top: 10px;
   border-radius: 4px;
-  margin-right: 20px;
+  margin-right: 10px;
   font-size: 30px;
+  font-weight: bold;
   text-transform: uppercase;
   color: #fff;
   background-color: #44C79D;
 }
 
+.banner-btn a:hover { box-shadow: 0 0 10px rgba(0,0,0,.5); }
+
 .banner-slider { 
-  padding: 114px 0;
+  padding: 7.1% 0;
   width: 32%;
   text-align: center;
   color: #fff;
@@ -289,16 +302,19 @@ h3 {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
+
 .insider-card li { 
-  width: 25%;
+  width: 20%;
   margin: 15px 0;
   box-sizing: border-box;
   text-align: center;
 }
+
+.insider-card li:hover { box-shadow: 0 0 10px rgba(0,0,0,.5); }
 
 .insider-card figure { 
   width: 65%;
@@ -438,30 +454,46 @@ h3 {
   color: #fff;
 }
 
+.testimonial-slider .slick-next { right: -2%; }
+.testimonial-slider .slick-prev { left: -2%; }
+
 .testimonial-slider .slick-dots { bottom: -70px; }
 /* Testimonial end */
 /*=================================
   main styling ends here
 =================================*/
 
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
+@media only screen and (max-width: 1204px) {
+
+.banner-link a:hover {text-decoration: none; }
+
+.banner .wrapper { 
+  padding-bottom: 20px;
+  flex-direction: column; 
+}
+
+.banner-slider { width: 85%; }
+
+.banner-btn { justify-content: start; }
+.banner-btn a { font-size: 16px; }
+}  
+
 @media only screen and (max-width: 995px) {
 
+.insider-card  { flex-direction: column; }
 
+.worklist li,
+.insider-card li {
+  width: 50%;
+  padding: 20px 0;
+  margin: 25px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
 
-}  
+.worklist { flex-direction: column; }
+h3 { text-align: center; }
+
+}
