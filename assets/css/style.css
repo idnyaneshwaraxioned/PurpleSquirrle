@@ -84,6 +84,7 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
+  overflow: hidden;
   font-family: sans-serif;
 }
 
@@ -230,11 +231,47 @@ header .wrapper { padding: 40px 0px 25px; }
   content: '\f183';
   margin: 0px 7px;
   font-family: fontAwesome;
-  color: #fff;
+  color: #A2A9F1;
   font-size: 30px;
 }
 
+.slide-icon span:nth-child(1)::after { color: #fff; }
+.slide-icon span:nth-child(2)::after { color: #fff; }
+.slide-icon span:nth-child(3)::after { color: #fff; }
+
+
 .slide-icon { margin: 15px 0; }
+
+.banner-slider .slick-prev,
+.banner-slider .slick-next {
+  z-index: 6;
+  top: 48%;
+}
+
+/* .testimonial-slider .slick-prev, */
+.banner-slider .slick-prev { left: 5%; }
+
+/* .testimonial-slider .slick-next, */
+.banner-slider .slick-next { right: 5%; }
+
+
+.testimonial-slider .slick-prev:before,
+.testimonial-slider .slick-next:before,
+.banner-slider .slick-next:before,
+.banner-slider .slick-prev:before { 
+  padding: 10px 15px;
+  font-size: 35px;
+  color: #fff;
+  border-radius: 50%;
+  font-family: fontAwesome;
+}
+
+.testimonial-slider .slick-prev:before,
+.banner-slider .slick-prev:before { content: '\f053'; }
+
+.testimonial-slider .slick-next:before,
+.banner-slider .slick-next:before { content: '\f054'; }
+
 
 /* Insiders section start */
 
@@ -362,6 +399,7 @@ h3 {
 /* Testimonial start */
 
 .testimonial { 
+  padding-bottom: 58px;
   color: #fff;
   background-color: #616DD0;
  }
@@ -369,6 +407,11 @@ h3 {
 .testimonial .wrapper { padding: 20px 0 40px; }
 
 .testimonial h3 { color: #fff; }
+
+.testimonial-slider {
+  width: 96%;
+  margin: 0 auto;
+}
 
 .testimonial-slide { 
   display: none;
@@ -384,6 +427,18 @@ h3 {
   font-size: 22px;
   text-align: center;
 }
+
+.testimonial-slider .slick-dots li button:before {
+  color: #fff;
+  font-size: 25px;
+}
+
+.testimonial-slider .slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #fff;
+}
+
+.testimonial-slider .slick-dots { bottom: -70px; }
 /* Testimonial end */
 /*=================================
   main styling ends here
